@@ -1,0 +1,113 @@
+
+
+
+    :host {
+        font-family:  BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+      }
+
+    
+      .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        background-color: #161314;
+        border-bottom: #cb2d0d  solid 6px;
+        
+      }
+
+      .header-logo{
+        width: 50%;
+        display:flex;
+
+      }
+      .sochi-logo{
+        width: 10em;
+        align-items: center;
+        margin: 0 0 0 5% ;
+        
+      }
+      .claro-sports{
+        width: 10em;
+        justify-content: right;
+        justify-content: space-between;
+      
+    
+      }
+      .content {
+        background-size: cover;
+        background-position: center center;
+        background-image: url('../../../assets/background.jpg');
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+      }
+      video{
+        width: 65%;
+         height: 60%;
+      }
+      .card {
+        border-radius: 4px;
+        height: 40em;
+        margin: 0 8px 16px;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease-in-out;
+        line-height: 24px;
+      }
+      label{
+          color: #ffffff;
+          font-size: 150%;
+      }
+      .video-bar{
+        height: 20em;
+        width: 100%;
+        background-color: #31383e;
+        display: flex;
+        text-align: center;
+        border-bottom: #496175 solid 5px;
+      }
+      .video-bar-txt{
+        padding: 0;
+        justify-content: center;
+        font-size: 250%;
+        color: #ffffff;
+        padding-top:3%;
+      }
+
+      img.circle{
+          margin-top:5%;
+          width: 55%;
+      }
+      tr.video-txt{
+          font-size: 10px;
+      }
+
+      .footer{
+        height: 5em;
+        width: 100%;
+        background-color: #000000;
+      }
+
+      a.privacity-notice{
+          font-size: 70%;
+          text-decoration: none;
+          color: #ffffff;
+      }
+      @media screen and (max-width: 575px) {
+        svg#rocket-smoke {
+          display: none;
+          visibility: hidden;
+        }
+      }
+    
+      
+    
