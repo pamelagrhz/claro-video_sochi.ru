@@ -1,19 +1,11 @@
-<!-- Headder-->
-<div class="header">
-    <div class='header-logo start'>
-        <a href='http://www.google.com'><img class='sochi-logo' href='' src='../../../assets/logo-sochi.png'></a>
-    </div>
-    <div class='header-logo end'>
-        <a href='http://www.google.com'><img class='claro-sports' src='../../../assets/logo-claro-sports.png'></a>
-    </div>
-</div>
+<app-header>
+</app-header>
 <!-- Contenido-->
 <div class="content">
     <div class="card">
         <div class="Faltan">
             <label>FALTAN</label>
         </div>
-
         <!-- Contador-->
         <div class="contador">
             <div class="countdown">
@@ -35,78 +27,11 @@
         </div>
         <!-- Video-->
         <div class="reproducing">
-            <video id="reproducing" controls autoplay onclick="changeVideo('reproducing')">
+            <video id="reproducing" controls autoplay onclick="changeVideo()">
                 <source src="https://www.youtube.com/watch?v=EfK-WX2pa8c">
             </video>
         </div>
     </div>
-    <!--Video bar-->
-    <div class="video-bar">
-        <div class="video-bar-content">
-            <div class="video-bar-txt">CLARO SPORTS EN SOCHI 2014
-            </div>
-            <div class="circle-videos">
-                <div class="video">
-                    <div class="container">
-                        <img class="image" src="../../../assets/team-latam.png" alt="">
-                        <div class="overlay">
-                            <div class="text">Duis tincidunt pellentesque condimentum. Aliquam erat volutpat.</div>
-                        </div>
-
-                    </div>
-
-                    <div class='video-txt'>TEAM LATAM</div>
-                </div>
-                <div class="video">
-                    <div class="container">
-                        <img class="image" src="../../../assets/travel-meets-fashion.png" alt="">
-                        <div class="overlay">
-                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                        </div>
-
-                    </div>
-
-                    <div class='video-txt'>TRAVEL MEETS FASHION</div>
-                </div>
-                <div class="video">
-                    <div class="container">
-                        <img class="image" src="../../../assets/velocidad-riesgo.png" alt="">
-                        <div class="overlay">
-                            <div class="text"> Suspendisse eu consequat urna. Integer ac auctor lorem. </div>
-                        </div>
-                    </div>
-
-                    <div class='video-txt'>VELOCIDAD Y RIESGO</div>
-                </div>
-                <div class="video">
-                    <div class="container">
-                        <img class="image" src="../../../assets/experiencia.png" alt="">
-                        <div class="overlay">
-                            <div class="text">Sed ligula erat, sagittis sit amet ultricies eu, eu nisl.</div>
-                        </div>
-
-                    </div>
-
-                    <div class='video-txt'>EXPERIENCIA MULTIMEDIA</div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-    <!--footer-->
-
 </div>
-<div class="footer">
-    <div class="footer-content">
-        <div class="footer-icon">
-            <a href="" class="privacity-notice">Aviso de privacidad / Contacto</a>
-        </div>
-        <div class="footer-icon">
-            <img class='sochi-logo footer' href='' src='../../../assets/logo-sochi.png'>
-        </div>
-        <div class="footer-icon">
-            <img class='sochi-logo footer' href='' src='../../../assets/icons.png'>
-        </div>
-    </div>
-</div>
+<app-video-bar></app-video-bar>
+<app-footer></app-footer>

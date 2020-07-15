@@ -1,0 +1,41 @@
+:host {
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+div {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    background-color: #161314;
+    border-bottom: #cb2d0d solid 6px;
+}
+
+.header-logo {
+    width: 40%;
+    justify-content: center;
+}
+
+.header-logo.end {
+    width: 40%;
+    justify-content: flex-end;
+}
+
+.sochi-logo {
+    width: 100%;
+    align-items: center;
+    margin: 0 15% 0 15%;
+}
+
+.claro-sports {
+    width: 100%;
+}

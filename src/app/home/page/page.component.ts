@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HomeService } from './../home.service';
 import * as countdown from 'countdown';
 import { ArrayType } from '@angular/compiler';
+//countdown
 interface Time{
   days: number,
   hours:number,
@@ -16,18 +17,19 @@ interface Time{
   
 })
 export class PageComponent implements OnInit {
+  //countdown
   time: Time =null;
   
   
   constructor(private homeService: HomeService) { }
  
   ngOnInit(): void {    
+    //countdown
     const date = new Date('2020-07-25');
     date.setHours(0);
     countdown(date,(ts)=>{
       this.time =ts;
-    },countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS)
- 
+    },countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS) 
   }
 
 }

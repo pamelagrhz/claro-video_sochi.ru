@@ -1,0 +1,46 @@
+div {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer {
+    background-color: #000000;
+    width: 100%;
+}
+
+.footer-content {
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 0 3% 0;
+}
+
+.sochi-logo.footer {
+    width: 100%;
+    height: auto;
+}
+
+.footer-icon {
+    align-self: center;
+    margin: 3%;
+}
+
+a.privacity-notice {
+    font-size: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 714px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 30%;
+    }
+    .footer-icon {
+        margin-left: 0;
+        width: 70%;
+    }
+    a.privacity-notice {
+        font-size: 60%;
+    }
+}
