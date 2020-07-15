@@ -1,57 +1,61 @@
-                :host {
-                   font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-                   font-size: 14px;
-               }
-               
-               div {
-                   display: flex;
-                   flex-flow: row wrap;
-               }
-               
-               .content {
-                   background-size: cover;
-                   background-position: center center;
-                   background-image: url('../../../assets/background.jpg');
-                   width: 100%;
-                   height: 100%;
-                   flex-direction: column;
-                   font-weight: 900;
-               }
-               
-               .reproducing {
-                   height: 60%;
-                   width: auto;
-               }
-               
-               .card {
-                   border-radius: 4px;
-                   height: 50em;
-                   justify-content: center;
-                   align-items: center;
-                   transition: all 0.2s ease-in-out;
-               }
-               
-               label {
-                   color: #ffffff;
-                   font-size: 250%;
-                   padding: 50% 0 0 0;
-               }
-               
-               .contador {
-                   width: 100%;
-                   justify-content: center;
-               }
-               
-               .countdown {
-                   color: #ffffff;
-                   width: 60px;
-                   height: 60px;
-                   border: solid #ffffff 2px;
-                   -moz-border-radius: 50%;
-                   -webkit-border-radius: 50%;
-                   border-radius: 50%;
-                   margin: .5%;
-                   justify-content: center;
-                   align-items: center;
-                   flex-direction: column;
-               }
+                   :host {
+                      font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                      font-size: 14px;
+                  }
+                  
+                  div {
+                      display: flex;
+                      flex-flow: row wrap;
+                  }
+                  
+                  .content {}
+                  
+                  .card {
+                      background-size: cover;
+                      background-position: center center;
+                      background-image: url('../../../assets/background.jpg');
+                      border-radius: 4px;
+                      width: 100%;
+                      height: 100%;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                      transition: all 0.2s ease-in-out;
+                      padding: 5% 0 5% 0;
+                  }
+                  
+                  label {
+                      color: #ffffff;
+                      font-size: 250%;
+                  }
+                  
+                  .contador {
+                      width: 100%;
+                      justify-content: center;
+                  }
+                  
+                  .countdown {
+                      color: #ffffff;
+                      width: 60px;
+                      height: 60px;
+                      border: solid #ffffff 2px;
+                      -moz-border-radius: 50%;
+                      -webkit-border-radius: 50%;
+                      border-radius: 50%;
+                      margin: .5%;
+                      justify-content: center;
+                      align-items: center;
+                      flex-direction: column;
+                  }
+                  
+                  .reproducing {
+                      width: 60%;
+                  }
+                  
+                  video {
+                      width: 100%;
+                  }
+                  
+                  @media screen and (max-width: 914px) {
+                      .reproducing {}
+                  }

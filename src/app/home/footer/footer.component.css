@@ -11,7 +11,6 @@ div {
 .footer-content {
     width: 100%;
     justify-content: space-around;
-    margin: 0 0 3% 0;
 }
 
 .sochi-logo.footer {
@@ -32,15 +31,16 @@ a.privacity-notice {
 
 @media screen and (max-width: 714px) {
     .footer-content {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 30%;
+        margin: 0 1%;
     }
     .footer-icon {
         margin-left: 0;
+        width: 30%;
+    }
+    .sochi-logo.footer {
         width: 70%;
     }
     a.privacity-notice {
-        font-size: 60%;
+        font-size: 70%;
     }
 }
