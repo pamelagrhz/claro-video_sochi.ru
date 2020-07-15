@@ -35,7 +35,7 @@
         width: 10em;
         justify-content: right;
         justify-content: space-between;
-      
+      float: rigth;
     
       }
       .content {
@@ -47,8 +47,8 @@
         flex-direction: row;
       }
       video{
-        width: 65%;
-         height: 60%;
+        width: 45%;
+         height:auto;
       }
       .card {
         border-radius: 4px;
@@ -84,6 +84,7 @@
         background-color: #31383e;
         display: flex;
         text-align: center;
+        align-items: center;
         border-bottom: #496175 solid 5px;
       }
       .video-bar-txt{
@@ -93,18 +94,49 @@
         color: #ffffff;
         padding-top:3%;
       }
-      .circle-image{
-        margin-top:5%;
-        width: 55%;
+      .container {
+        position: relative;
+        width: 50%;
+        height: 100px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
       }
       
-      .circle-image:hover {
-        opacity: 0.07;
-        -webkit-transition: opacity 500ms;
-        -moz-transition: opacity 500ms;
-        -o-transition: opacity 500ms;
-        -ms-transition: opacity 500ms;
-        transition: opacity 500ms;
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #ba3b00;
+      }
+      
+      .container:hover .overlay {
+        opacity: 1;
+      }
+      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
       }
       tr.video-txt{
           font-size: 10px;
