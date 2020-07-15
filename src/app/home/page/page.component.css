@@ -42,10 +42,9 @@
         background-size: cover;
         background-position: center center;
         background-image: url('../../../assets/background.jpg');
-        display: flex;
         width: 100%;
         height: 100%;
-        flex-direction: column;
+        flex-direction: row;
       }
       video{
         width: 65%;
@@ -66,7 +65,19 @@
       label{
           color: #ffffff;
           font-size: 150%;
+          
       }
+      .countdown{
+          color:#ffffff;
+          width: 100px;
+          height: 100px;
+          border: solid #ffffff 2px;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          border-radius: 50%;
+          
+      }
+
       .video-bar{
         height: 20em;
         width: 100%;
@@ -82,10 +93,18 @@
         color: #ffffff;
         padding-top:3%;
       }
-
-      img.circle{
-          margin-top:5%;
-          width: 55%;
+      .circle-image{
+        margin-top:5%;
+        width: 55%;
+      }
+      
+      .circle-image:hover {
+        opacity: 0.07;
+        -webkit-transition: opacity 500ms;
+        -moz-transition: opacity 500ms;
+        -o-transition: opacity 500ms;
+        -ms-transition: opacity 500ms;
+        transition: opacity 500ms;
       }
       tr.video-txt{
           font-size: 10px;
