@@ -1,164 +1,209 @@
-
-
-
-    :host {
-        font-family:  BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-      }
-
-    
-      .header {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 10%;
-        display: flex;
-        align-items: center;
-        background-color: #161314;
-        border-bottom: #cb2d0d  solid 6px;
-        
-      }
-
-      .header-logo{
-        width: 50%;
-        display:flex;
-
-      }
-      .sochi-logo{
-        width: 10em;
-        align-items: center;
-        margin: 0 0 0 5% ;
-        
-      }
-      .claro-sports{
-        width: 10em;
-        justify-content: right;
-        justify-content: space-between;
-      float: rigth;
-    
-      }
-      .content {
-        background-size: cover;
-        background-position: center center;
-        background-image: url('../../../assets/background.jpg');
-        width: 100%;
-        height: 100%;
-        flex-direction: row;
-      }
-      video{
-        width: 45%;
-         height:auto;
-      }
-      .card {
-        border-radius: 4px;
-        height: 40em;
-        margin: 0 8px 16px;
-        padding: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        transition: all 0.2s ease-in-out;
-        line-height: 24px;
-      }
-      label{
-          color: #ffffff;
-          font-size: 150%;
-          
-      }
-      .countdown{
-          color:#ffffff;
-          width: 100px;
-          height: 100px;
-          border: solid #ffffff 2px;
-          -moz-border-radius: 50%;
-          -webkit-border-radius: 50%;
-          border-radius: 50%;
-          
-      }
-
-      .video-bar{
-        height: 20em;
-        width: 100%;
-        background-color: #31383e;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        border-bottom: #496175 solid 5px;
-      }
-      .video-bar-txt{
-        padding: 0;
-        justify-content: center;
-        font-size: 250%;
-        color: #ffffff;
-        padding-top:3%;
-      }
-      .container {
-        position: relative;
-        width: 50%;
-        height: 100px;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-      
-      .image {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-      
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        border-radius: 50%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #ba3b00;
-      }
-      
-      .container:hover .overlay {
-        opacity: 1;
-      }
-      
-      .text {
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
-      tr.video-txt{
-          font-size: 10px;
-      }
-
-      .footer{
-        height: 5em;
-        width: 100%;
-        background-color: #000000;
-      }
-
-      a.privacity-notice{
-          font-size: 70%;
-          text-decoration: none;
-          color: #ffffff;
-      }
-      @media screen and (max-width: 575px) {
-        svg#rocket-smoke {
-          display: none;
-          visibility: hidden;
-        }
-      }
-    
-      
-    
+             :host {
+                font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                font-size: 14px;
+            }
+            
+            .header {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 10%;
+                display: flex;
+                align-items: center;
+                background-color: #161314;
+                border-bottom: #cb2d0d solid 6px;
+            }
+            
+            .header-logo {
+                width: 40%;
+                justify-content: center;
+            }
+            
+            .header-logo.end {
+                width: 50%;
+                justify-content: flex-end;
+            }
+            
+            .sochi-logo {
+                width: 100%;
+                align-items: center;
+                margin: 0 15% 0 15%;
+            }
+            
+            .claro-sports {
+                width: 100%;
+            }
+            
+            .content {
+                background-size: cover;
+                background-position: center center;
+                background-image: url('../../../assets/background.jpg');
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+                font-weight: 900;
+            }
+            
+            .reproducing {
+                height: 60%;
+                width: auto;
+            }
+            
+            .card {
+                border-radius: 4px;
+                height: 50em;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.2s ease-in-out;
+            }
+            
+            label {
+                color: #ffffff;
+                font-size: 250%;
+                padding: 50% 0 0 0;
+            }
+            
+            .contador {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .countdown {
+                color: #ffffff;
+                width: 60px;
+                height: 60px;
+                border: solid #ffffff 2px;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                margin: .5%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .video-bar {
+                width: 100%;
+                background-color: #31383e;
+                text-align: center;
+                align-items: center;
+                flex-direction: column;
+                border-bottom: #496175 solid 5px;
+            }
+            
+            .circle-videos {
+                width: 100%;
+                padding: 3%;
+                justify-content: center;
+            }
+            
+            .video {
+                flex-direction: column;
+            }
+            
+            .video-bar-txt {
+                font-size: 250%;
+                color: #ffffff;
+                padding-bottom: 3%;
+                align-self: center;
+            }
+            
+            .video-bar-content {
+                justify-content: center;
+                margin: 5% 0 0;
+            }
+            
+            .container {
+                position: relative;
+                width: 50%;
+                height: 100px;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+            }
+            
+            .image {
+                display: block;
+                width: 200%;
+                height: auto;
+            }
+            
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 200%;
+                width: 200%;
+                border-radius: 50%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #ba3b00;
+            }
+            
+            .container:hover .overlay {
+                opacity: 1;
+            }
+            
+            .text {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            
+            .video-txt {
+                font-size: 1em;
+                color: white;
+                display: flex;
+                justify-content: center;
+                margin: 55% 0 0;
+            }
+            
+            .footer {
+                background-color: #000000;
+            }
+            
+            .footer-content {
+                width: 100%;
+                justify-content: space-around;
+                margin: 0 0 3% 0;
+            }
+            
+            .sochi-logo.footer {
+                width: 100%;
+                height: auto;
+            }
+            
+            .footer-icon {
+                align-self: center;
+                margin: 3%;
+            }
+            
+            a.privacity-notice {
+                font-size: 100%;
+                text-decoration: none;
+                color: #ffffff;
+            }
+            
+            @media screen and (max-width: 714px) {
+                .footer-content {
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                .footer-icon {
+                    margin-left: 0;
+                }
+            }
+            
+            div {
+                display: flex;
+                flex-flow: row wrap;
+            }
