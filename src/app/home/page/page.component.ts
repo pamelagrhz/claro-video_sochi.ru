@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { HomeService } from './../home.service';
 import * as countdown from 'countdown';
-import { ArrayType } from '@angular/compiler';
+import { Subscription } from 'rxjs';
+
 //countdown
 interface Time{
   days: number,
@@ -17,12 +18,20 @@ interface Time{
   
 })
 export class PageComponent implements OnInit {
+ 
+  changeVideo() {
+   console.log("click desde video-bar");  }
+  clickEventsubscription:Subscription;
   //countdown
   time: Time =null;
   
   
-  constructor(private homeService: HomeService) { }
- 
+  constructor(private homeService: HomeService) { 
+    this.clickEventsubscription = this.homeService.getClickEvent (). subscribe (() => { 
+      this.changeVideo(); 
+      })
+  }
+  
   ngOnInit(): void {    
     //countdown
     const date = new Date('2020-07-25');
@@ -30,6 +39,10 @@ export class PageComponent implements OnInit {
     countdown(date,(ts)=>{
       this.time =ts;
     },countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS) 
+    
+    function changeVideo () { 
+      } 
+  
   }
 
 }

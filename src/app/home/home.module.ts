@@ -18,7 +18,10 @@ import { VideoBarComponent } from './video-bar/video-bar.component'
     HomeService
   ],
   exports: [
-    PageComponent
+    PageComponent,
+    FooterComponent,
+    HeaderComponent,
+    VideoBarComponent
   ]
 })
 export class HomeModule { }

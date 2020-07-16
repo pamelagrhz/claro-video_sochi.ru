@@ -43,6 +43,10 @@ div {
     border-radius: 50%;
 }
 
+button {
+    all: unset;
+}
+
 .image {
     display: block;
     width: 200%;
